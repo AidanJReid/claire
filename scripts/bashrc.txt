@@ -1,2 +1,0 @@
-COPY scripts/bashrc.txt .
-RUN cat bashrc.txt >> $HOME/.bashrc

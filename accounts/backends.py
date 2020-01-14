@@ -1,5 +1,5 @@
 from django.contrib.auth.models import User
-
+from django.db.models import Q
 
 class EmailAuth:
     """Authenticate a user by an exact match on the email and password"""

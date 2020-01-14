@@ -58,8 +58,8 @@
     <div class="container">
         <div class="display">
             <form action="{% url 'search' %}" method="get">
-                <input type="text" name="q">
-                <button type="search">Search</button>
+                <input type="text" name="q"></input>
+                <button type="submit">Search</button>
             </form>
         </div>
         {% block content %} {% endblock %}

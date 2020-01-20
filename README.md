@@ -57,8 +57,8 @@ It is designed for...
 
 #### Framework
 
-- [Bootstrap v.]()
-    - 
+- [Bootstrap 3.3.7](https://bootswatch.com/cerulean/)
+    - Used the Bootswatch Cerulean theme
 - [jQuery 3.4.1](https://code.jquery.com/jquery/)
     - I used the most recent version of jQuery for my Javascript framework.
 - [Flask 1.1.1](http://flask.pocoo.org/)

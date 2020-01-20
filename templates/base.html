@@ -48,6 +48,10 @@
             </div>
         </div>
     </nav>
+    <!-- Fixed header image -->
+    <div class="container-fluid">
+        <div class="head-image"><img src="{{ url_for('static', filename='static/assets/img/head-image.jpg') }}" alt="massage"></div>
+    </div>
     {% if messages %}
         <div class="alert alert-success">
             <div class="messages">
@@ -68,7 +72,7 @@
     </div>
     <footer>
         <div class="container">
-            <p>Made by Aidan J. Reid</p>
+            <p>Made by Aidan Reid</p>
         </div>
     </footer>
 </body>

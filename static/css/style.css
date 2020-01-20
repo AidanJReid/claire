@@ -3,6 +3,12 @@ body {
     padding-top: 100px;
 }
 
+/* .heads {
+    min-height: 200px !important;
+    height: auto !important;
+    width: 100% !important;
+} */
+
 footer {
     margin-top: 40px;
     padding-top: 20px;

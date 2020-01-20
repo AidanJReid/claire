@@ -50,7 +50,7 @@
     </nav>
     <!-- Fixed header image -->
     <div class="container-fluid">
-        <div class="head-image"><img src="{{ url_for('static', filename='static/assets/img/head-image.jpg') }}" alt="massage"></div>
+        <div class="head-image"><img src= "{% static 'assets/img/head-image.jpg' %}" alt="massage"></div>
     </div>
     {% if messages %}
         <div class="alert alert-success">

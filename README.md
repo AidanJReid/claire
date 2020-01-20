@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/AidanJReid/claire.svg?branch=master)](https://travis-ci.org/AidanJReid/claire)
 
-# Claire's Massages - Full Stack eCommerce site offering a range of massage and althernative therapy treatments.
+# Claire's Massages - Full Stack eCommerce site offering a range of massage and alternative therapy treatments.
 
 ## Table of Contents
 1. [**UX**](#ux)
@@ -83,7 +83,7 @@ I used **Balsamiq for desktop** wireframes for two reasons:
 - Students have free access to the desktop version until the end of 2020.
 - I really enjoyed how simple and easy it is to use for mockups especially in conversations with my assigned mentor for brainstorming.
 
-![forex-comix.png](/static/assets/images/wireframe/forex-comix.png)
+![claire.png](/static/img/claire.png)
 
 
 ## Features

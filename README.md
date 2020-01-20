@@ -37,7 +37,7 @@
 
 ## UX
 
-![Responsiveness Test](/static/assets/images/wireframe/screencap.JPG)
+![Responsiveness Test]()
 
 This is the fourth milestone project of my [Code Institute](https://codeinstitute.net/) Full Stack Software Development studies. 
 The objective for this project is to...
@@ -83,7 +83,7 @@ I used **Balsamiq for desktop** wireframes for two reasons:
 - Students have free access to the desktop version until the end of 2020.
 - I really enjoyed how simple and easy it is to use for mockups especially in conversations with my assigned mentor for brainstorming.
 
-![claire.png](/static/img/claire.png)
+![claire.png](/static/assets/img/claire.png)
 
 
 ## Features

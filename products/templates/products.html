@@ -1,5 +1,23 @@
 {% extends 'base.html' %}
-
+{% if messages %}
+    <div class="container-fluid">
+        <div class="alert alert-success">
+            <div class="messages">
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    <div class="container-fluid">
+        <div class="display">
+            <form action="{% url 'search' %}" method="get">
+                <input type="text" name="q"></input>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
 {% block content %}
 <div class="row row-flex">
     {% for product in products %}

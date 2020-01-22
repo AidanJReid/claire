@@ -1,5 +1,58 @@
 {% extends 'base.html' %}
 
+{% block content %}
+<div class="container">
+    <h1 class="text-center">Claire's Massages</h1>
+        <p class="text-center">I am a fully trained, accredited massage therapist based in Dublin (Beaumont) with an inhouse service specializing in the following treatments:</p>
+</div>
+<hr>
+<div class="container">
+    <h1 class="text-center">Treatments</h1>
+        <p class="text-center">Full-Body massages involve the use of specialist equipment and it is necessary therefore that these be conducted at the practitioner's premises.</p>
+        <ul class="list-group align-items-center">
+            <li>Holistic Full Body Massage</li>
+            <li>Shoulder and face massage</li>
+            <li>Pregnancy masssage</li>
+            <li>Oncology full-body massage</li>
+            <li>Back massage</li>
+            <li>Foot and leg massage</li>
+            <li>Lymphatic drainage full body massage.</li>
+        </ul>
+        <br>
+        <div class="text-center"><a href="{% url 'products' %}"" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Treatments</a>
+        </div>
+</div>
+<hr>
+<div class="container">
+    <h1 class="text-center">Book In</h1>
+        <p class="text-center">Prefer to pay in person? That's fine!</p>
+        <p class="text-center">Find an available slot in my calendar and fill out your details to let me know which treatment you want.</p>
+        <div class="d-flex justify-content-center"><a href="{% url 'products' %}"" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Book In</a>
+        </div>
+</div>
+<hr>
+<div class="container">
+<form>
+  <fieldset>
+    <div class="form-group">
+      <label for="staticEmail">Name</label>
+        <input type="text" class="form-control" placeholder="Enter name">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email</label>
+      <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Comment</label>
+      <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="What's on your mind?"></textarea>
+    </div>
+    </fieldset>
+</form>
+</div>
+
+{% endblock %}
+
 {% block page_title %}Home Page{% endblock %}
 
 {% block page_heading %}Home{% endblock %}

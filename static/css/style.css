@@ -2,6 +2,10 @@ body {
     font-family: Arial;
 }
 
+#top-head {
+    padding-top: 20px;
+}
+
 .icon-bar {
     background-color: #fff;
 }
@@ -27,8 +31,8 @@ body {
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     margin: 0 auto;
 }
 
@@ -43,15 +47,19 @@ caption p {
 }
 
 .panel-default {
-    border-color: transparent;
+    border-color: black;
     padding: 0 10px;
 }
 
-.panel-body {
-    height: 100%;
-    border: 1px solid #ddd;
+.card-body {
+    border: 1px solid white;
 }
 
 .card-text {
     min-height: 40px;
+}
+
+.text-truncate {
+  overflow: hidden;
+  max-width: 75ch;
 }

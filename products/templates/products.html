@@ -9,8 +9,8 @@
             </div>
         </div>
     </div>
-    {% endif %}
-    <div class="container-fluid">
+{% endif %}
+    <div class="container">
         <div class="display">
             <form action="{% url 'search' %}" method="get">
                 <input type="text" name="q"></input>
@@ -21,19 +21,19 @@
 {% block content %}
 <div class="row row-flex">
     {% for product in products %}
-        <div class="card col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-3 display panel panel-default">
+        <div class="card col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
             <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
                 <div class="card-body">
-                    <h4 class ="card-title">{{ product.name }}</h4>
-                    <p class="card-text text-truncate" style="max-width: 100%">{{ product.description }}</p>
-                    <p>{{ product.price }}</p>
+                    <h5 class ="card-title">{{ product.name }}</h5>
+                    <p class="card-text text-truncate">{{ product.description }}</p>
+                    <p>€{{ product.price }}</p>
 
                 <form method="post" action="{% url 'add_to_cart' product.id %}">
                     {% csrf_token %}
                     <div class="input-group">
-                        <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
+                        <input name="quantity" type="number" min="1" max="999" class="form-control" value="1">
                         <span class="input-group-btn">
-                            <button class="btn btn-success" type="submit">Add</button>
+                            <button class="btn btn-success" type="submit">Add to Cart</button>
                         </span>
                     </div>
                 </form>

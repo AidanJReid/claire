@@ -11,22 +11,22 @@
     </div>
 {% endif %}
 {% block content %}
-<div class="container">
-	<h2 class="text-center">Treatments</h2>
+<div class="container text-center">
+	<h2>Treatments</h2>
 	<!--Filter instructions-->
     <form action="{% url 'products' %}" method="GET">
-	<p class="text-center">You can search for treatments by muscle group or using 'Search' in the navigation bar.</p>
+	<p>You can search for treatments by muscle group or using 'Search' in the navigation bar.</p>
 	<div class="row">
-		<div class="col-sm-12 form-check form-check-inline text-center">
+		<div class="col-sm-12">
                 {% for product in products %}
-                <input class="form-check-input" type="checkbox" value="{{product.body}}">
-                <label class="form-check-label">{{product}}</label>
+                <input class="form-check-input" type="checkbox" value="{{product.part}}">
+                <label class="form-check-label">{{product.part}}</label>
                 {% endfor %}
         </div>
 	</div>
     <br>
     <div class="row">
-        <div class="col-sm-12 text-center">
+        <div class="col-sm-12">
             <button class="btn btn-primary" type='submit'>Search</button>
         </div>
     </div>

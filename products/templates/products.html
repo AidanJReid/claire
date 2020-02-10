@@ -18,18 +18,19 @@
 	<p>You can search for treatments by muscle group or using 'Search' in the navigation bar.</p>
 	<div class="row">
 		<div class="col-sm-12">
-                {% for product in products %}
-                <input class="form-check-input" type="checkbox" value="{{product.part}}">
-                <label class="form-check-label">{{product.part}}</label>
-                {% endfor %}
+                <div class="btn-group dropright">
+                    <button type="button" class="btn btn-danger">Body Part</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        {% for product in products %}
+                        <a class="dropdown-item" href="#">{{product.part}}</a>
+                        {% endfor %}
+                    </div>
+                </div>
         </div>
 	</div>
-    <br>
-    <div class="row">
-        <div class="col-sm-12">
-            <button class="btn btn-primary" type='submit'>Search</button>
-        </div>
-    </div>
 </form>
 </div>
 <hr>

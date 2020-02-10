@@ -44,6 +44,11 @@ caption p {
     word-wrap: break-word;
 }
 
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
 .row.row-flex {
     display: flex;
     flex-wrap: wrap;
@@ -61,4 +66,14 @@ caption p {
 .text-truncate {
   overflow: hidden;
   max-width: 75ch;
+}
+
+/* Profile section */
+#avatar {
+    border: solid black 1px;
+}
+
+/* Cart Section */
+.cartman {
+    border: solid gray 1px;
 }

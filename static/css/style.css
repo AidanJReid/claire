@@ -1,9 +1,33 @@
+/* HOME PAGE */
 body {
     font-family: Arial;
 }
 
-#top-head {
+#body-bg {
+    background-color: #d0e5f5;
+}
+
+.top-head {
     padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* Add some shadows to create a card effect */
+.chead {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 16px;
+  height: 150px;
+}
+
+#ccon {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+#ccon::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .icon-bar {
@@ -27,6 +51,18 @@ body {
     background-color: #c67605;
 }
 
+/* Jumbotron */
+.jumbotron {
+    background-image: url("../assets/img/jumbo.jpg");
+    background-size: cover;
+    color: black;
+}
+
+#jumbocon {
+    padding: 0px;
+}
+
+/* TREATMENTS PAGE */
 .card {
     max-width: 540px;
     height: 320px;
@@ -68,12 +104,12 @@ caption p {
   max-width: 75ch;
 }
 
-/* Profile section */
+/* PROFILE SECTION */
 #avatar {
     border: solid black 1px;
 }
 
-/* Cart Section */
+/* CART SECTION */
 .cartman {
     border: solid gray 1px;
 }

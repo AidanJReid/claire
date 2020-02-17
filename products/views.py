@@ -9,8 +9,8 @@ def all_products(request):
 
 
 def detail(request, id):
-    products = Products
-    return render(request, "product-detail.html")
+    products = Product.get_object(id)
+    return render(request, "product-detail.html", {"products": products})
 
 
 # class Detail(DetailView):

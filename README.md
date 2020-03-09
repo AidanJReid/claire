@@ -1,3 +1,5 @@
+NB. Still in Construction!
+
 [![Build Status](https://travis-ci.org/AidanJReid/claire.svg?branch=master)](https://travis-ci.org/AidanJReid/claire)
 
 # Claire's Massages - Full Stack eCommerce site offering a range of massage and alternative therapy treatments.
@@ -71,6 +73,9 @@ As a *registered user* I want to be able to:
 
 I wanted the style of the site to be 'light' and reflect the nature of the business which is massage therapy. I researched other sites throughout this
 process for style tips and colour patterns and adopted the scheme I did after discussion with the eventual site owner.
+
+- The primary font 'Lato' was chosen because of its aesthetic appeal and I felt it complemented the headings quite well. I also like how the font appeared in the buttons, especially when I applied letter spacing.
+- The secondary font 'Bellota' was chosen for the headings because I felt it was stylish and elegant - much like the intended customer market!
 
 ### Wireframes
 

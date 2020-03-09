@@ -1,7 +1,16 @@
-/* HOME PAGE */
+/* Styling of headers and body */
+@import url('https://fonts.googleapis.com/css?family=Bellota:400,700|Lato:400,700&display=swap');
+
 body {
-    font-family: Arial;
+    font-family: 'Lato', sans-serif;
 }
+
+h1, h2, h3 {
+    font-family: 'Bellota', cursive;
+}
+
+/* General styling HOME PAGE */
+
 
 #body-bg {
     background-color: white;
@@ -52,6 +61,10 @@ body {
 #qform {
     background:gainsboro;
     margin-bottom: 10px;
+}
+
+.btngen {
+    letter-spacing: 0.1rem;
 }
 
 /* TREATMENTS PAGE */

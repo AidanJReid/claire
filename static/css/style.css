@@ -9,6 +9,7 @@ h1, h2, h3, .navbar-brand {
     font-family: 'Bellota', cursive;
 }
 
+
 /* General styling HOME PAGE */
 
 
@@ -42,6 +43,12 @@ h1, h2, h3, .navbar-brand {
     background-color: #c67605;
 }
 
+/* Carousel */
+
+.carousel {
+    margin-top: 50px;
+}
+
 /* Jumbotron */
 .jumbotron {
     background-image: url("../assets/img/jumbo.jpg");
@@ -50,7 +57,7 @@ h1, h2, h3, .navbar-brand {
     margin-bottom: 0px;
 }
 
-/* Quote https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp*/
+/* Quote sourced from https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp*/
 #quote {
     background: radial-gradient(indigo,#2FA4E7);
     color: white;

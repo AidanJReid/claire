@@ -75,6 +75,13 @@ h1, h2, h3, .navbar-brand {
     letter-spacing: 0.1rem;
 }
 
+/* footer */
+.footer {
+    height: 6rem;
+    padding-top: 15px;
+}
+
+
 /* TREATMENTS PAGE */
 .card {
     max-width: 540px;
@@ -208,6 +215,15 @@ caption p {
 }
 
 /* CART SECTION */
-.cartman {
-    border: solid gray 1px;
+
+#cartSection {
+    margin: 5px 0px;
+}
+
+.input-group-addon {
+    padding-right: 10px;
+}
+
+.card-deck {
+    margin-top: 20px;
 }

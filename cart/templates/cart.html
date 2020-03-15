@@ -17,7 +17,7 @@
             <form method="post" action="{% url 'adjust_cart' item.id %}">
                 {% csrf_token %}
                 <div class="input-group">
-                    <div class="input-group-addon">Qty</div>
+                    <div class="input-group-addon align-self-center">Qty</div>
                     <input name="quantity" type="number" min="0" max="999" class="form-control" value="{{item.quantity}}">
                     <span class="input-group-btn">
                         <button type="submit" class="btn btn-primary"><i class="fa fa-edit"></i> Amend</button>
@@ -29,15 +29,14 @@
     </div>
     {% endfor %}
 </div>
-<div class="container">
+<div class="container" id="cartSection">
     <div class="row row-flex justify-content-start">
-            <div class="col-md-2 cartman">
-                <p><strong>TOTAL: €{{ total }}</strong></p>
-            </div>
-            <div class="col-md-2 cartman">
-                <a href="{% url 'checkout' %}" class="btn btn-success" role="button">Checkout</a>
-            </div>
+        <div class="col-md-3">
+            <h2>TOTAL: €{{ total }}</strong></h2>
+        </div>
+        <div class="col-md-3">
+            <a href="{% url 'checkout' %}" class="btn btn-success" role="button">Checkout</a>
+        </div>
     </div>
 </div>
-
 {% endblock %}

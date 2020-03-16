@@ -2,7 +2,7 @@ NB. Still in Construction!
 
 [![Build Status](https://travis-ci.org/AidanJReid/claire.svg?branch=master)](https://travis-ci.org/AidanJReid/claire)
 
-# Claire's Massages - Full Stack eCommerce site offering a range of massage and alternative therapy treatments.
+# Lavender Blue - Full Stack eCommerce site offering a range of massage and alternative therapy treatments.
 
 ## Table of Contents
 1. [**About**](#about)

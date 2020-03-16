@@ -33,14 +33,13 @@ NB. Still in Construction!
 
 ## About
 
-This is an ecommerce website (app) for an alternative massage service that enables clients to book and pay for a treatment of ther choosing.
-This has been conceived with a real-world application in mind - my sister's fledgling startup side-business. It also is designed for clients
-to leave their feedback about treatments and share with the wider community. 
+This is an ecommerce website (app) for a massage service that enables clients to book and pay for a range of treatments.
+This has been conceived with a real-world application in mind - my sister's fledgling startup side-business.
 
 ### Purpose
 
 This is the fourth milestone project (of four) of my [Code Institute](https://codeinstitute.net/) Full Stack Software Development studies.
-The requirement was 'full-stack site based around business logic used to control a centrally-owned dataset. You will set up an authentication 
+The requirement was for a 'full-stack site based around business logic used to control a centrally-owned dataset. You will set up an authentication 
 mechanism and provide paid access to the site's data and/or other activities based on the dataset, such as the purchase of a product/service.'
 
 The external user's goal is to receive a treatment following payment.
@@ -61,9 +60,8 @@ As a *guest* I want to be able to:
 - filter search treatments
 
 As a *registered user* I want to be able to:
-- all the above
+- do all the above
 - reset my password if forgotten
-- post/edit/delete a testimonial against a treatment
 - view/edit profile
 - make booking in calendar
 - add treatment to shopping cart
@@ -90,23 +88,22 @@ I used **Balsamiq for desktop** wireframes for two reasons:
 
 ### Existing features
 
-- Deployed a **Sticky navbar | Sidenav** which makes navigation easier for the user, especially on mobile. This displays various links based on user profile,
-.e.g. If not logged in (Register, Login, Treatments, Cart); logged in (Logout, Treatments, Cart).Sidenav pops out on small to medium devices (max-width 992 px) 
+- Deployed a **Sticky navbar | Sidenav** making navigation easier for the user, especially on mobile. This displays various links based on user profile,
+.e.g. If not logged in (Register, Login, Treatments, Cart); logged in (Logout, Treatments, Cart). Sidenav pops out on small to medium devices (max-width 992 px) 
 and contain the aforementioned nav links.
 - **Flash message**
 - **Login** - enables registered users to login. Username and password are cross-checked against account for verification against details stored in the database.
 - **Register** - Allows visitors to register for a free account. Checks included to ensure username and email address don't already exist in the 
 database before users are successfully registered. Passwords stored in the database are hashed for security reasons.
-- **Logout** - Logged-in users can logout by clicking on appropriate button in the nav/sidenav, whereby their session is ended.
+- **Logout** - Logged-in users can logout by clicking on appropriate button in the nav/sidenav, thereby ending their session.
 - **Reset Password** - Registered users having difficulty recalling their password can reset it on the login page, whereby the email address associated with their
-profile will receive an email with corresponding link to confirm that they want to reset their password (and subsequently choose a new password to overwrite old on in the database)
-- **Profile Page** - Unique page detailing user name, email address of account, profile pic and any testimonials that have been posted (with the ability to edit same)
-- **Edit Profile** - update profile pic, edit testimonials (if any). (Modal?)
+profile will receive an email with corresponding link to confirm that they want to reset their password (and subsequently choose a new password to overwrite old on in the database).
+- **Profile Page** - Unique page detailing user name, email address of account and profile pic.
+- **Edit Profile** - update profile pic and details.
 - **Filter** - Either using search for keyword, or by using the radio buttons which filter by body part (for massage).
 
 ### Features Left to Implement
 
-- Introduce **blog** for administrator to publish posts in chronological order. Not super-pressing, but a nice-to-have.
 - **Pagination** especially as the number of available treatments grow. Now, it's relatively manageable.
 
 ## Technologies Used
@@ -133,12 +130,26 @@ It also featured in the nav and footer sections of the page.
     - [Django](https://www.heroku.com) used as primary Python web framework.
 - **Python**    
     - [Python 3.6.7](https://www.python.org/) - Used as the back-end programming language.
+- **Amazon S3**
+    - [Amazon S3](https://aws.amazon.com/) - Storing images entered into the database.
+- **Boto S3**
+    - [Boto S3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) - Creation, configuration and management of AWS S3.
 - **Stripe API**    
     - [Stripe](https://stripe.com/gb) - As project required ecommerce functionality, Stripe was used for securing payments.
 - **PostgreSQL**    
-    - Using [PostgreSQL](https://stripe.com/gb) relational database for storage of backend data.
+    - [PostgreSQL](https://www.postgresql.org/) - Relational database for storage of backend data.
+- **Gunicorn**    
+    - [Gunicorn](https://pypi.org/project/gunicorn/) - WSGI HTTP Server to help with deployment of Django project to Heroku.
+- **Pillow**    
+    - [Pillow](https://pillow.readthedocs.io/en/stable/) - Python Imaging Library to process image files for database storage.
+- **Psycopg2**    
+    - [Psycopg2](https://pypi.org/project/psycopg2/) - PostgreSQL database adapter for Python.
+- **Whitenoise**    
+    - [Whitenoise](http://whitenoise.evans.io/en/stable/) - Enables web app to serve its own static files.
+- **Google Fonts**    
+    - [Google Fonts](https://fonts.googleapis.com/) - Custom font (Bellota and Lato) chosen for styling.
 - **Font Awesome**
-    - I used the latest [Font Awesome](https://fontawesome.com/) (4.7.0) library primarily because of the wide selection of free options available,
+    - [Font Awesome (4.7.0)](https://fontawesome.com/) library used primarily because of the wide selection of free options available,
 and the ease of inserting them into this project to make the style changes I wanted.
 - **Gitpod**
     - [Gitpod](https://www.gitpod.io/) - Used as the dev environment to write code.
@@ -220,13 +231,27 @@ Deployed on [Heroku](https://www.heroku.com/) using the **master** branch on Git
 
 ### Content
 
+*  Created with the help of Claire Reid - eventual site owner and masseuse.
+
+
 ### Media
 
 * Responsiveness and device images from [Responsive Design](http://ami.responsivedesign.is/)
 * Favicon created at [Favicon.io](https://favicon.io/)
-* Logo created at [Logohub.io](https://logohub.io/)
 * Image Gallery:
-    - 
+    - Carousel homepage images 
+    [1](https://pixabay.com/images/id-1929064/)
+    [2](https://pixabay.com/images/id-2768833/)
+    [3](https://pixabay.com/images/id-3084952/)
+    - [Jumbotron (booking) image](https://unsplash.com/photos/n7a2OJDSZns)
+    - Treatments
+        - [Back Massage](https://unsplash.com/photos/CEM52sAHR80)
+        - [Lymph Drainage](https://unsplash.com/photos/hBLf2nvp-Yc)
+        - [Foot and Leg](https://unsplash.com/photos/qeuJczNo54w)
+        - [Oncology](https://unsplash.com/photos/0MoF-Fe0w0A)
+        - [Pregnancy](https://unsplash.com/photos/NIZeg731LxM)
+        - [Neck and Face](https://unsplash.com/photos/RJCslxmvBcs)
+        - [Holistic](https://unsplash.com/photos/mCb06TSaab0)
 
 ### Acknowledgements
 

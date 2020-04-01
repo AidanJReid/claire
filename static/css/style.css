@@ -77,7 +77,6 @@ h1, h2, h3, .navbar-brand {
 
 /* footer */
 .footer {
-    height: 6rem;
     padding-top: 15px;
 }
 
@@ -226,4 +225,13 @@ caption p {
 
 .card-deck {
     margin-top: 20px;
+}
+
+/* Media queries */
+
+/* Small devices (426px and down) */
+@media screen and (max-width: 426px) {
+  .carousel-item img {
+    height: 40vh !important;
+  }
 }

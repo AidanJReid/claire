@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
 {% if messages %}
-    <div class="container-fluid">
-        <div class="alert alert-success">
-            <div class="messages">
-                {% for message in messages %}
-                    {{ message }}
-                {% endfor %}
-            </div>
+<div class="container-fluid">
+    <div class="alert alert-success">
+        <div class="messages">
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
         </div>
     </div>
+</div>
 {% endif %}
 {% block content %}
 <div class="container text-center">
@@ -18,17 +18,17 @@
 	<p>You can search for treatments by muscle group or using 'Search' in the navigation bar.</p>
 	<div class="row">
 		<div class="col-sm-12">
-                <div class="btn-group dropright">
-                    <button type="button" class="btn btn-danger"><i class="fa fa-child"></i> Body Part</button>
-                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-                    <div class="dropdown-menu">
-                        {% for product in products %}
-                        <a class="dropdown-item" href="#">{{product.part}}</a>
-                        {% endfor %}
-                    </div>
+            <div class="btn-group dropright">
+                <button type="button" class="btn btn-danger"><i class="fa fa-child"></i> Body Part</button>
+                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                    {% for product in products %}
+                    <a class="dropdown-item" href="#">{{product.part}}</a>
+                    {% endfor %}
                 </div>
+            </div>
         </div>
 	</div>
 </form>

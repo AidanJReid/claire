@@ -4,19 +4,17 @@
 <div class="row my-5">
     <div class="col-xs-12 col-md-6 offset-md-3">
         <ul class="list-group">
-            <div class="chip row">
-                <!-- <img src="{% static 'assets/img/headc.jpg' %}" alt="head" width="96" height="96"> -->
-                    {% block page_title %}{{ user }}'s Profile{% endblock %}
+            <li class="chip list-group-item list-group-item-warning">
+                {% block page_title %}{{ user }}'s Profile{% endblock %}
                 <span id="pemail"><small>{{ profile.email }}</small></span>
-            </div>
-                <li class="list-group-item list-group-item-action active">In Your Shopping Cart</li>
-                {% for item in cart_items %}
-                <li class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center">
-                {{ item.product.name }}
-                <span class="badge badge-primary badge-pill">{{ item.quantity }}</span>
-                {% endfor %}</li>
+            </li>
+            <li class="list-group-item list-group-item-primary d-flex justify-content-between">In Your Shopping Cart <i class="fa fa-shopping-basket"></i></li>
+            {% for item in cart_items %}
+            <li class="list-group-item list-group-item-light d-flex justify-content-between align-items-center">
+            {{ item.product.name }}
+            <span class="badge badge-primary badge-pill">{{ item.quantity }}</span>
+            {% endfor %}</li>
         </ul>
-        </div>
     </div>
 </div>
 {% endblock %}

@@ -1,24 +1,21 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block content %}
-<div class="row">
+<div class="row my-5">
     <div class="col-xs-12 col-md-6 offset-md-3">
         <ul class="list-group">
             <div class="chip row">
-                <img src="{% static 'assets/img/headc.jpg' %}" alt="Claire" width="96" height="96">
+                <!-- <img src="{% static 'assets/img/headc.jpg' %}" alt="head" width="96" height="96"> -->
                     {% block page_title %}{{ user }}'s Profile{% endblock %}
                 <span id="pemail"><small>{{ profile.email }}</small></span>
             </div>
-            <li class="list-group-item list-group-item-action active">In Your Shopping Cart</button>
-            {% for item in cart_items %}
+                <li class="list-group-item list-group-item-action active">In Your Shopping Cart</li>
+                {% for item in cart_items %}
                 <li class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center">
                 {{ item.product.name }}
-                <span class="badge badge-primary badge-pill">{{ item.quantity }}</span></a>
-            {% endfor %}
-            <li class="list-group-item list-group-item-info d-flex justify-content-between align-items-center">
-            Comments
-                <span class="badge badge-primary badge-pill">3</span></a>
-            </ul>
+                <span class="badge badge-primary badge-pill">{{ item.quantity }}</span>
+                {% endfor %}</li>
+        </ul>
         </div>
     </div>
 </div>

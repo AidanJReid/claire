@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Libre Franklin', sans-serif;
+    margin-top: 65px;
 }
 
 h1, h2, h3, .navbar-brand {
@@ -14,7 +15,7 @@ h1, h2, h3, .navbar-brand {
 /* Carousel header */
 
 .carousel-item img {
-    height: 450px !important;
+    height: 66vh !important;
 }
 
 #body-bg {
@@ -83,6 +84,7 @@ h1, h2, h3, .navbar-brand {
 
 /* footer */
 .footer {
+    margin-top: 50px;
     padding-top: 15px;
 }
 

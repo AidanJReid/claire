@@ -3,39 +3,40 @@
 {% load bootstrap_tags %}
 
 {% block content %}
-<div class="card-deck">
-    {% for item in cart_items %}
-    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-md-4">
-        <div class="card h-100">
-            <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
-                <div class="card-body">
-                    <h5 class="card-title">{{ item.product.name }}</h5>
-                    <p class="card-text">{{ item.product.description }}</p>
-                    <p>€{{ item.product.price }}</p>
-                </div>
-                <div class="card-footer">
-                    <form method="post" action="{% url 'adjust_cart' item.id %}">
-                        {% csrf_token %}
-                        <div class="input-group">
-                            <div class="input-group-addon align-self-center">Qty</div>
-                            <input name="quantity" type="number" min="0" max="999" class="form-control" value="{{item.quantity}}">
-                            <span class="input-group-btn">
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-edit"></i> Amend</button>
-                            </span>
-                        </div>
-                    </form>
-                </div>
+<div class="container-fluid">
+    <div class="card-deck">
+        {% for item in cart_items %}
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-3 mb-2">
+            <div class="card h-100 shadow-lg p-1 bg-white rounded">
+                <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ item.product.name }}</h5>
+                        <p class="card-text">{{ item.product.description }}</p>
+                        <p>€{{ item.product.price }}</p>
+                    </div>
+                    <div class="card-footer">
+                        <form method="post" action="{% url 'adjust_cart' item.id %}">
+                            {% csrf_token %}
+                            <div class="input-group">
+                                <div class="input-group-addon align-self-center">Qty</div>
+                                <input name="quantity" type="number" min="0" max="999" class="form-control" value="{{item.quantity}}">
+                                <span class="input-group-btn">
+                                    <button type="submit" class="btn btn-primary"><i class="fa fa-edit"></i> Amend</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+            </div>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-</div>
-
-<div class="container my-4" id="cartSection">
-    <div class="mx-4">
-        <h2>TOTAL: €{{ total }}</strong></h2>
-    </div>
-    <div>
-        <a href="{% url 'checkout' %}" class="btn btn-success" role="button">Checkout</a>
+    <div class="container my-4" id="cartSection">
+        <div class="mx-4">
+            <h2>TOTAL: €{{ total }}</strong></h2>
+        </div>
+        <div>
+            <a href="{% url 'checkout' %}" class="btn btn-success" role="button">Checkout</a>
+        </div>
     </div>
 </div>
 {% endblock %}

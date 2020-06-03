@@ -3,6 +3,8 @@
 {% load bootstrap_tags %}
 
 {% block content %}
+<h1 class="top-head text-center">Shopping Cart</h1>
+<hr>
 <div class="container-fluid">
     <div class="card-deck">
         {% for item in cart_items %}
@@ -35,7 +37,7 @@
             <h2>TOTAL: €{{ total }}</strong></h2>
         </div>
         <div>
-            <a href="{% url 'checkout' %}" class="btn btn-success" role="button">Checkout</a>
+            <a href="{% url 'checkout' %}" class="btn btn-success btngen" role="button">Checkout</a>
         </div>
     </div>
 </div>

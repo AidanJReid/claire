@@ -10,6 +10,10 @@ h1, h2, h3, .navbar-brand {
     font-family: 'Bellota', cursive;
 }
 
+hr {
+    width: 50%;
+}
+
 /* HOME PAGE */
 
 /* Carousel */

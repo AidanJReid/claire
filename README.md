@@ -184,8 +184,8 @@ To test responsiveness, the following mobiles were tested Galaxy S5, Pixel 2, Pi
 |--------|------------------|--------------|
 |  1  | Security vulnarability with Django 1.11.24  | Fixed - Upgraded Django to 1.11.27  |
 |  2  | Pagination  | Not needed with relative few treatments proferred  |
-|  3  | Stripe Confirmation Payment  | See conclusion  |
-|  4  | Email password reset  | See conclusion  |
+|  3  | Stripe Confirmation Payment  | This now works after using a sixteen digit number '4242424242424242'. In the tutorial we were advised to use the 11 digit number which, in fact, threw a 402 error. CVV left blank will also permit payment.  |
+|  4  | Email password reset  | Not connected to host email  |
 |  5  | Booking treatments restricted  | Initially, my 30 day trial using Calendly (API integrated) included all the listed treatments on offer. However, this has expired prior to submitting project. One remains, and at this stage, it should be considered more of a 'nice to have' feature.  |
 |  6  | Blank line at top of carousel in mobile  | Adjusted margin-top accordingly  |
 

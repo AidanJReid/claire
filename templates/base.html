@@ -17,8 +17,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    {% block head_js %}
-    {% endblock head_js %}
 </head>
 <body>
     <!-- Fixed masthead -->
@@ -111,9 +109,11 @@
         </div>
 	</footer>
     <!-- End footer -->
-    
 </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Strip JS loader for checkout -->
+    {% block stripe_js %}{% endblock stripe_js %}
 </html>

@@ -33,11 +33,9 @@
         {% endfor %}
     </div>
     <hr>
-    <div class="container my-4" id="cartSection">
-        <div class="mx-4">
+    <div class="container my-4 py-2" id="cartSection">
+        <div class="mx-4 text-center">
             <h2>TOTAL: €{{ total }}</strong></h2>
-        </div>
-        <div>
             <a href="{% url 'checkout' %}" class="btn btn-success btngen" role="button">Checkout</a>
         </div>
     </div>

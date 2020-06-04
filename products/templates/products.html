@@ -12,26 +12,16 @@
 {% endif %}
 {% block content %}
 <div class="container text-center">
-	<h1 class="top-head">Treatments</h1>
-	<!--Filter instructions-->
-    <form action="{% url 'products' %}" method="GET">
-	<p>You can search for treatments by muscle group or using 'Search' in the navigation bar.</p>
-	<div class="row">
-		<div class="col-sm-12">
-            <div class="btn-group dropright">
-                <button type="button" class="btn btn-danger"><i class="fa fa-child"></i> Body Part</button>
-                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="sr-only">Toggle Dropdown</span>
-                </button>
-                <div class="dropdown-menu">
-                    {% for product in products %}
-                    <a class="dropdown-item" href="#">{{product.part}}</a>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-	</div>
-</form>
+	<h1 class="top-head">Range of Treatments</h1>
+    <p>Search for available treatments. Alternatively, scroll down for complete list.</p>
+    <p><em>NB. More to be added!</em></p>
+    <div class="text-center">
+    <!-- Form search -->
+        <form action="{% url 'search' %}" class="form-inline" method="get" style="justify-content:center">
+            <input type="text" name="q" class="form-control mr-sm-2" placeholder="Treatment"></input>
+            <button class="btn btn-warning my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
 </div>
 <hr>
 <div class="container-fluid">

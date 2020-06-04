@@ -1,5 +1,3 @@
-NB. Still in Construction!
-
 [![Build Status](https://travis-ci.org/AidanJReid/claire.svg?branch=master)](https://travis-ci.org/AidanJReid/claire)
 
 # Lavender Blue - Full Stack eCommerce site offering a range of massage and alternative therapy treatments.
@@ -39,8 +37,7 @@ This has been conceived with a real-world application in mind - my sister's fled
 ### Purpose
 
 This is the fourth milestone project (of four) of my [Code Institute](https://codeinstitute.net/) Full Stack Software Development studies.
-The requirement was for a 'full-stack site based around business logic used to control a centrally-owned dataset. You will set up an authentication 
-mechanism and provide paid access to the site's data and/or other activities based on the dataset, such as the purchase of a product/service.'
+The requirement was for a 'full-stack site based around business logic used to control a centrally-owned dataset. You will set up an authentication mechanism and provide paid access to the site's data and/or other activities based on the dataset, such as the purchase of a product/service.'
 
 The external user's goal is to receive a treatment following payment.
 The site owner's goal is to earn money for services rendered.
@@ -57,12 +54,11 @@ As a *guest* I want to be able to:
 - register an account
 - view the selection of treatments
 - search for treatments
-- filter search treatments
 
 As a *registered user* I want to be able to:
 - do all the above
 - reset my password if forgotten
-- view/edit profile
+- view profile
 - make booking in calendar
 - add treatment to shopping cart
 - purchase treatment
@@ -72,8 +68,8 @@ As a *registered user* I want to be able to:
 I wanted the style of the site to be 'light' and reflect the nature of the business which is massage therapy. I researched other sites throughout this
 process for style tips and colour patterns and adopted the scheme I did after discussion with the eventual site owner.
 
-- The primary font 'Lato' was chosen because of its aesthetic appeal and I felt it complemented the headings quite well. I also like how the font appeared in the buttons, especially when I applied letter spacing.
-- The secondary font 'Bellota' was chosen for the headings because I felt it was stylish and elegant - much like the intended customer market!
+- The primary font 'Libre Franklin' was chosen because of its aesthetic appeal and I felt it complemented the headings quite well. I also like how the font appeared in the buttons, especially when I applied letter spacing.
+- The font 'Bellota' was chosen for the headings because I felt it was stylish and elegant - much like the intended customer market!
 
 ### Wireframes
 
@@ -104,7 +100,9 @@ profile will receive an email with corresponding link to confirm that they want 
 
 ### Features Left to Implement
 
-- **Pagination** especially as the number of available treatments grow. Now, it's relatively manageable.
+- **Filter** especially as the number of available treatments grow. Now, it's relatively manageable.
+- **Product Drill** ability to 'zoom' into treatment, see the various health benefits and perhaps a youtube tutorial showcasing treament.
+
 
 ## Technologies Used
 
@@ -160,8 +158,10 @@ and the ease of inserting them into this project to make the style changes I wan
 
 Testing for each user scenario:
 
-1. **User story 1**: :white_check_mark:
-
+1. **User story 1** - Guest: :white_check_mark:
+Guests are able to perform all of the tasks listed above.
+2. **User story 2** - Registered User: :white_check_mark:
+Registered users are able to perform task listed.
 
 ### General
 
@@ -188,13 +188,10 @@ To test responsiveness, the following mobiles were tested Galaxy S5, Pixel 2, Pi
 | Number | Issue            | Resolution   |
 |--------|------------------|--------------|
 |  1  | Security vulnarability with Django 1.11.24  | Fixed - Upgraded Django to 1.11.27  |
-|  2  | Pagination  | TBC  |
-|  3  |   |   |
-|  4  |   |   |
-|  5  |   |   |
-|  6  |   |   |
-|  7  |   |   |
-|  8  |   |   |
+|  2  | Pagination  | Not needed with relative few treatments proferred  |
+|  3  | Stripe Confirmation Payment  | See conclusion  |
+|  4  | Email password reset  | See conclusion  |
+
 
 ## Deployment
 
@@ -204,11 +201,11 @@ Deployed using the Master Branch on hosting platform GitHub Pages.
 
 The following steps were taken:
 
-  1. 
-  2. 
-  3. 
-  4. 
-  5. 
+  1. Create a `master` branch in Github repository 
+  2. Use Gitpod IDE to build the site
+  3. Commit files to the staging area using bash terminal commands: `git status`; `git add (specify directory)`; `git commit -m "add message"`
+  4. Push files to the working environment using `git push`, which updates the repository
+  5. Publish site from `master` branch using `settings` tab in the main page of the repository, select `source` as `master branch`, then `save`
 
 ### Heroku
 
@@ -216,10 +213,10 @@ Deployed on [Heroku](https://www.heroku.com/) using the **master** branch on Git
 
 1. Create a **requirements.txt** file so Heroku can install the required dependencies to run the app.
     - `sudo pip3 freeze --local > requirements.txt`
-    - My file can be found [here]().
+    - My file can be found [here](https://github.com/AidanJReid/claire/blob/master/requirements.txt).
 2. Create a **Procfile** to tell Heroku what type of application is being deployed, and how to run it.
     - `echo web: python run.py > Procfile`
-    - My file can be found [here]().
+    - My file can be found [here](https://github.com/AidanJReid/claire/blob/master/Procfile).
 3. Sign up for a free Heroku account, create your project app, and click the **Deploy** tab, at which point you can *Connect GitHub* as the Deployment Method, and select *Enable Automatic Deployment*.
 4. In the Heroku **Settings** tab, click on the *Reveal Config Vars* button to configure environmental variables as follows:
     - **IP** : `0.0.0.0`
@@ -253,7 +250,21 @@ Deployed on [Heroku](https://www.heroku.com/) using the **master** branch on Git
         - [Neck and Face](https://unsplash.com/photos/RJCslxmvBcs)
         - [Holistic](https://unsplash.com/photos/mCb06TSaab0)
 
+### Conclusion
+
+I learnt a valuable lesson in this milestone. When I started it I was 6 months into the course, and had build much of the back-end which was
+working successfully. I decided to park the project and spent more time exploring front-end technologies on other mediums. I revisited this
+project in the final month of my diploma and it was a considerable struggle to 'plug' back into the code again.
+
+In fact, many of the features that were working, in the back end, no longer did! Going back over the tutorials that had guided me effectively
+the first time, was to no avail. Those videos that I had built my code on had been replaced by a newer project.
+
+Considering the timeframes and work I had already put in, I felt it more prudent to share what I have managed to complete - warts and all.
+
+I've immensely enjoyed the course and it has given me lots of valuable insights which I will carry with me into my coding career.
+
 ### Acknowledgements
 
 * Inspiration and structural format for this README from [Travel Tim's oustanding project](https://github.com/TravelTimN/ci-milestone04-dcd)
 * Brian Macharia, my CI mentor, for his support and patience.
+

@@ -66,7 +66,7 @@ As a *registered user* I want to be able to:
 
 ### Design
 
-I wanted the style of the site to be 'light' and reflect the nature of the business which is massage therapy. I researched other sites [1](https://www.dublinwellnesscentre.ie/ "Dublin Wellness Centre")[2](https://www.thebodywiseclinic.ie/ "BodyWise")[3](https://dublinholisticmassage.com/ "Dublin Holistic Massage") throughout this process for style tips and colour patterns and adopted the scheme I did after discussion with the eventual site owner.
+I wanted the style of the site to be 'light' and reflect the nature of the business which is massage therapy. I researched other sites ([1](https://www.dublinwellnesscentre.ie/ "Dublin Wellness Centre"),[2](https://www.thebodywiseclinic.ie/ "BodyWise"),[3](https://dublinholisticmassage.com/ "Dublin Holistic Massage")) throughout this process for style tips and colour patterns and adopted the scheme I did after discussion with the eventual site owner.
 
 - The primary font 'Libre Franklin' was chosen because of its aesthetic appeal and I felt it complemented the headings quite well. I also like how the font appeared in the buttons, especially when I applied letter spacing.
 - The font 'Bellota' was chosen for the headings because I felt it was stylish and elegant - much like the intended customer market!
@@ -75,7 +75,7 @@ I wanted the style of the site to be 'light' and reflect the nature of the busin
 
 I used **Balsamiq for desktop** wireframes for two reasons:
 - Students have free access to the desktop version until the end of 2020.
-- I really enjoyed how simple and easy it is to use for mockups especially in conversations with my assigned mentor for brainstorming.
+- I really enjoyed how simple and easy it is to use for mockups especially in conversations with my assigned mentor for brainstorming. The following mockup was created before a single line of code was written. It evolved from there!
 
 ![claire.png](/static/assets/img/claire.png)
 

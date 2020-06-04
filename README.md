@@ -25,6 +25,7 @@
 7. [**Credits**](#credits)
     - [**Content**](#content)
     - [**Media**](#media)
+    - [**Conclusion**](#conclusion)
     - [**Acknowledgements**](#acknowledgements)
 
 ---
@@ -56,7 +57,7 @@ As a *guest* I want to be able to:
 - search for treatments
 
 As a *registered user* I want to be able to:
-- do all the above
+- do all the above, and
 - reset my password if forgotten
 - view profile
 - make booking in calendar
@@ -65,8 +66,7 @@ As a *registered user* I want to be able to:
 
 ### Design
 
-I wanted the style of the site to be 'light' and reflect the nature of the business which is massage therapy. I researched other sites throughout this
-process for style tips and colour patterns and adopted the scheme I did after discussion with the eventual site owner.
+I wanted the style of the site to be 'light' and reflect the nature of the business which is massage therapy. I researched other sites [1](https://www.dublinwellnesscentre.ie/ "Dublin Wellness Centre")[2](https://www.thebodywiseclinic.ie/ "BodyWise")[3](https://dublinholisticmassage.com/ "Dublin Holistic Massage") throughout this process for style tips and colour patterns and adopted the scheme I did after discussion with the eventual site owner.
 
 - The primary font 'Libre Franklin' was chosen because of its aesthetic appeal and I felt it complemented the headings quite well. I also like how the font appeared in the buttons, especially when I applied letter spacing.
 - The font 'Bellota' was chosen for the headings because I felt it was stylish and elegant - much like the intended customer market!
@@ -84,19 +84,14 @@ I used **Balsamiq for desktop** wireframes for two reasons:
 
 ### Existing features
 
-- Deployed a **Sticky navbar | Sidenav** making navigation easier for the user, especially on mobile. This displays various links based on user profile,
-.e.g. If not logged in (Register, Login, Treatments, Cart); logged in (Logout, Treatments, Cart). Sidenav pops out on small to medium devices (max-width 992 px) 
+- Deployed a **Sticky navbar | Sidenav** making navigation easier for the user, especially on mobile. This displays various links based on user profile, .e.g. If not logged in (Register, Login, Treatments, Cart); logged in (Logout, Treatments, Cart). Sidenav pops out on small to medium devices (max-width 992 px) 
 and contain the aforementioned nav links.
-- **Flash message**
 - **Login** - enables registered users to login. Username and password are cross-checked against account for verification against details stored in the database.
-- **Register** - Allows visitors to register for a free account. Checks included to ensure username and email address don't already exist in the 
-database before users are successfully registered. Passwords stored in the database are hashed for security reasons.
+- **Register** - Allows visitors to register for a free account. Checks included to ensure username and email address don't already exist in the database before users are successfully registered. Passwords stored in the database are hashed for security reasons.
 - **Logout** - Logged-in users can logout by clicking on appropriate button in the nav/sidenav, thereby ending their session.
-- **Reset Password** - Registered users having difficulty recalling their password can reset it on the login page, whereby the email address associated with their
-profile will receive an email with corresponding link to confirm that they want to reset their password (and subsequently choose a new password to overwrite old on in the database).
-- **Profile Page** - Unique page detailing user name, email address of account and profile pic.
-- **Edit Profile** - update profile pic and details.
-- **Filter** - Either using search for keyword, or by using the radio buttons which filter by body part (for massage).
+- **Reset Password** - Registered users having difficulty recalling their password can reset it on the login page, whereby the email address associated with their profile will receive an email with corresponding link to confirm that they want to reset their password (and subsequently choose a new password to overwrite old on in the database).
+- **Profile Page** - Unique page detailing user name, email address of account and shopping cart details.
+- **Search** - Search for keyword.
 
 ### Features Left to Implement
 
@@ -192,6 +187,7 @@ To test responsiveness, the following mobiles were tested Galaxy S5, Pixel 2, Pi
 |  3  | Stripe Confirmation Payment  | See conclusion  |
 |  4  | Email password reset  | See conclusion  |
 |  5  | Booking treatments restricted  | Initially, my 30 day trial using Calendly (API integrated) included all the listed treatments on offer. However, this has expired prior to submitting project. One remains, and at this stage, it should be considered more of a 'nice to have' feature.  |
+|  6  | Blank line at top of carousel in mobile  | Adjusted margin-top accordingly  |
 
 
 ## Deployment
@@ -253,19 +249,16 @@ Deployed on [Heroku](https://www.heroku.com/) using the **master** branch on Git
 
 ### Conclusion
 
-I learnt a valuable lesson in this milestone. When I started it I was 6 months into the course, and had build much of the back-end which was
-working successfully. I decided to park the project and spent more time exploring front-end technologies on other mediums. I revisited this
-project in the final month of my diploma and it was a considerable struggle to 'plug' back into the code again.
+I learnt a valuable lesson in this milestone. When I started this project I was 6 months into the course and had build much of the back-end which was working successfully. I decided to park the project and spent more time exploring front-end technologies on other mediums. I revisited this project in the final month of my diploma and it was a considerable struggle to 'plug' back into the code again.
 
 In fact, many of the features that were working, in the back end, no longer did! Going back over the tutorials that had guided me effectively
-the first time, was to no avail. Those videos that I had built my code on had been replaced by a newer project.
+the first time, was to no avail. Those videos that I had built my code on had been replaced by a newer CI project.
 
-Considering the timeframes and work I had already put in, I felt it more prudent to share what I have managed to complete - warts and all.
+Considering the timeframe and work I had already put in, I felt it more prudent to share what I have managed to complete - warts and all.
 
-I've immensely enjoyed the course and it has given me lots of valuable insights which I will carry with me into my coding career.
+I've enjoyed the course immensely and it has given me lots of valuable insights which I will carry with me into my coding career.
 
 ### Acknowledgements
 
 * Inspiration and structural format for this README from [Travel Tim's oustanding project](https://github.com/TravelTimN/ci-milestone04-dcd)
 * Brian Macharia, my CI mentor, for his support and patience.
-

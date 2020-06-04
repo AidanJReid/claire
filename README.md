@@ -17,7 +17,6 @@
     - [**Hosting**](#hosting)
     - [**Technologies**](#technologies)
 5. [**Testing**](#testing)
-    - [**User Journey**](#user-journey)
     - [**General**](#general)
     - [**Validators**](#validators)
     - [**Issues**](#issues)
@@ -52,21 +51,22 @@ The front end uses HTML, CSS and Javascript. The back end uses Python and Django
 ### User Stories
 
 As a *guest* I want to be able to:
-- register an account
-- view the selection of treatments
-- search for treatments
+- register an account :white_check_mark:
+- view the selection of treatments :white_check_mark:
+- make a manual search for treatments :white_check_mark:
 
 As a *registered user* I want to be able to:
 - do all the above, and
+- maintain a record of my carted items (in local storage or other) :white_check_mark:
 - reset my password if forgotten
-- view profile
-- make booking in calendar
-- add treatment to shopping cart
-- purchase treatment
+- view profile :white_check_mark:
+- make booking in calendar :white_check_mark:
+- add treatment to shopping cart :white_check_mark:
+- purchase treatment :white_check_mark:
 
 ### Design
 
-I wanted the style of the site to be 'light' and reflect the nature of the business which is massage therapy. I researched other sites ([1](https://www.dublinwellnesscentre.ie/ "Dublin Wellness Centre"),[2](https://www.thebodywiseclinic.ie/ "BodyWise"),[3](https://dublinholisticmassage.com/ "Dublin Holistic Massage")) throughout this process for style tips and colour patterns and adopted the scheme I did after discussion with the eventual site owner.
+I wanted the style of the site to be 'light' and reflect the nature of the business which is massage therapy. I researched other sites ([1](https://www.dublinwellnesscentre.ie/ "Dublin Wellness Centre"), [2](https://www.thebodywiseclinic.ie/ "BodyWise"), [3](https://dublinholisticmassage.com/ "Dublin Holistic Massage")) throughout this process for style tips and colour patterns and adopted the scheme I did after discussion with the eventual site owner.
 
 - The primary font 'Libre Franklin' was chosen because of its aesthetic appeal and I felt it complemented the headings quite well. I also like how the font appeared in the buttons, especially when I applied letter spacing.
 - The font 'Bellota' was chosen for the headings because I felt it was stylish and elegant - much like the intended customer market!
@@ -77,8 +77,18 @@ I used **Balsamiq for desktop** wireframes for two reasons:
 - Students have free access to the desktop version until the end of 2020.
 - I really enjoyed how simple and easy it is to use for mockups especially in conversations with my assigned mentor for brainstorming. The following mockup was created before a single line of code was written. It evolved from there!
 
-![claire.png](/static/assets/img/claire.png)
-
+- [Home - no user logged in (xs, sm and md)]()
+- [Home - no user logged in (lg and xl)]()
+- [Home - user logged in (xs, sm and md)]()
+- [Home - user logged in (lg and xl)]()
+- [Profile - user logged in (xs, sm and md)]()
+- [Profile - user logged in (lg and xl)]()
+- [Treatments - user logged in (xs, sm and md)]()
+- [Treatments - user logged in (lg, xl)]()
+- [Cart - user logged in - something in the cart (xs, sm and md)]()
+- [Cart - user logged in - something in the cart (lg, xl)]()
+- [Checkout - user logged in (xs, sm and md)]()
+- [Checkout - user logged in (lg and xl)]()
 
 ## Features
 
@@ -91,11 +101,11 @@ and contain the aforementioned nav links.
 - **Logout** - Logged-in users can logout by clicking on appropriate button in the nav/sidenav, thereby ending their session.
 - **Reset Password** - Registered users having difficulty recalling their password can reset it on the login page, whereby the email address associated with their profile will receive an email with corresponding link to confirm that they want to reset their password (and subsequently choose a new password to overwrite old on in the database).
 - **Profile Page** - Unique page detailing user name, email address of account and shopping cart details.
-- **Search** - Search for keyword.
+- **Search** - Search for treatment by keyword.
 
 ### Features Left to Implement
 
-- **Filter** especially as the number of available treatments grow. Now, it's relatively manageable.
+- **Filter** - Particularly useful for certain symptoms or for specific aches. This would be added as the number of available treatments grow. Now, it's relatively manageable.
 - **Product Drill** ability to 'zoom' into treatment, see the various health benefits and perhaps a youtube tutorial showcasing treament.
 
 
@@ -140,7 +150,7 @@ It also featured in the nav and footer sections of the page.
 - **Whitenoise**    
     - [Whitenoise](http://whitenoise.evans.io/en/stable/) - Enables web app to serve its own static files.
 - **Google Fonts**    
-    - [Google Fonts](https://fonts.googleapis.com/) - Custom font (Bellota and Lato) chosen for styling.
+    - [Google Fonts](https://fonts.googleapis.com/) - Custom font (Bellota and Libre Franklin) chosen for styling.
 - **Font Awesome**
     - [Font Awesome (4.7.0)](https://fontawesome.com/) library used primarily because of the wide selection of free options available,
 and the ease of inserting them into this project to make the style changes I wanted.
@@ -148,15 +158,6 @@ and the ease of inserting them into this project to make the style changes I wan
     - [Gitpod](https://www.gitpod.io/) - Used as the dev environment to write code.
 
 ## Testing
-
-### User Journey
-
-Testing for each user scenario:
-
-1. **User story 1** - Guest: :white_check_mark:
-Guests are able to perform all of the tasks listed above.
-2. **User story 2** - Registered User: :white_check_mark:
-Registered users are able to perform task listed.
 
 ### General
 
@@ -169,10 +170,10 @@ To test responsiveness, the following mobiles were tested Galaxy S5, Pixel 2, Pi
 ### Validators
 
 **HTML**
-- [HTML Checker](https://validator.w3.org/).
+- [HTML Checker](https://validator.w3.org/) to validate my HTML code.
 
 **CSS**
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) to validate my CSS code.
 
 **TRAVIS**
 - I used [Travis Continuous Integration](https://travis-ci.org/) to test my code. The subsequent success of this test can be noted at the top of this README.
@@ -216,9 +217,37 @@ Deployed on [Heroku](https://www.heroku.com/) using the **master** branch on Git
     - My file can be found [here](https://github.com/AidanJReid/claire/blob/master/Procfile).
 3. Sign up for a free Heroku account, create your project app, and click the **Deploy** tab, at which point you can *Connect GitHub* as the Deployment Method, and select *Enable Automatic Deployment*.
 4. In the Heroku **Settings** tab, click on the *Reveal Config Vars* button to configure environmental variables as follows:
-    - **IP** : `0.0.0.0`
-    - **PORT** : `8080`
+
+| Key | Value |
+--- | ---
+AWS_ACCESS_KEY_ID | `<your secret key>`
+AWS_SECRET_ACCESS_KEY | `<your secret key>`
+AWS_STORAGE_BUCKET_NAME | `<your AWS S3 bucket name>`
+DATABASE_URL | `<your postgres database url>`
+EMAILJS_USER_ID | `<your secret key>`
+HOSTNAME | `<your heroku app hostname>`
+SECRET_KEY | `<your secret key>`
+STRIPE_CANCEL_URL | `<link to all-products page in your app>`
+STRIPE_PUBLISHABLE | `<your secret key>`
+STRIPE_SECRET | `<your secret key>`
+STRIPE_SUCCESS_URL | `<link to checkout/confirm page in your app>`
+
 5. App should be successfully deployed to Heroku at this point.
+
+6. From the command line of the IDE:
+    - Enter heroku postres shell 
+    - Migrate the database models 
+    - Create a superuser account in the new database
+    
+     Instructions can be found in the [heroku devcenter documentation](https://devcenter.heroku.com/articles/heroku-postgresql).
+
+7. In the heroku dashboard, click "Deploy". Scroll down to "Manual Deploy", select the master branch and click "Deploy Branch".
+
+8. Once the build is complete, click the "View app" button.
+
+9. From the (Heroku) link add `/admin` to the end of the url, which gives you key to the Django Admin castle. Log in with your superuser account and create as many instances of Product/Treatments as your heart is content. All stored within the new database 'course.
+
+10. Once these are stored in your database your site will pull on these resources, (hopefully) showing them in the product page.
 
 
 ## Credits
@@ -260,5 +289,5 @@ I've enjoyed the course immensely and it has given me lots of valuable insights 
 
 ### Acknowledgements
 
-* Inspiration and structural format for this README from [Travel Tim's oustanding project](https://github.com/TravelTimN/ci-milestone04-dcd)
+* Inspiration and structural format for this README from [Travel Tim's oustanding project](https://github.com/TravelTimN/ci-milestone04-dcd), and [AJGreaves mousetastic's project](https://raw.githubusercontent.com/AJGreaves/thehouseofmouse).
 * Brian Macharia, my CI mentor, for his support and patience.

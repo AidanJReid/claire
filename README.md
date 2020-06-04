@@ -46,7 +46,7 @@ The front end uses HTML, CSS and Javascript. The back end uses Python and Django
 
 ## UX
 
-![Responsiveness Test]()
+![Responsiveness Test](/static/assets/img/lb.PNG)
 
 ### User Stories
 
@@ -191,6 +191,7 @@ To test responsiveness, the following mobiles were tested Galaxy S5, Pixel 2, Pi
 |  2  | Pagination  | Not needed with relative few treatments proferred  |
 |  3  | Stripe Confirmation Payment  | See conclusion  |
 |  4  | Email password reset  | See conclusion  |
+|  5  | Booking treatments restricted  | Initially, my 30 day trial using Calendly (API integrated) included all the listed treatments on offer. However, this has expired prior to submitting project. One remains, and at this stage, it should be considered more of a 'nice to have' feature.  |
 
 
 ## Deployment

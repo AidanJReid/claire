@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Libre Franklin', sans-serif;
-    margin-top: 65px;
+    margin-top: 55px;
 }
 
 h1, h2, h3, .navbar-brand {
@@ -263,6 +263,6 @@ caption p {
     height: 40vh !important;
   }
   .carousel-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }

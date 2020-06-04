@@ -106,7 +106,7 @@ and contain the aforementioned nav links.
 ### Features Left to Implement
 
 - **Filter** - Particularly useful for certain symptoms or for specific aches. This would be added as the number of available treatments grow. Now, it's relatively manageable.
-- **Product Drill** ability to 'zoom' into treatment, see the various health benefits and perhaps a youtube tutorial showcasing treament.
+- **Product Drill** - The ability to 'zoom' into treatment, see the various health benefits and perhaps a youtube tutorial showcasing treament.
 
 
 ## Technologies Used
@@ -280,10 +280,7 @@ STRIPE_SUCCESS_URL | `<link to checkout/confirm page in your app>`
 
 I learnt a valuable lesson in this milestone. When I started this project I was 6 months into the course and had build much of the back-end which was working successfully. I decided to park the project and spent more time exploring front-end technologies on other mediums. I revisited this project in the final month of my diploma and it was a considerable struggle to 'plug' back into the code again.
 
-In fact, many of the features that were working, in the back end, no longer did! Going back over the tutorials that had guided me effectively
-the first time, was to no avail. Those videos that I had built my code on had been replaced by a newer CI project.
-
-Considering the timeframe and work I had already put in, I felt it more prudent to share what I have managed to complete - warts and all.
+Going back over the tutorials that had guided me effectively the first time, was to no avail. Those videos that I had built my code on had been replaced by a newer CI project.
 
 I've enjoyed the course immensely and it has given me lots of valuable insights which I will carry with me into my coding career.
 

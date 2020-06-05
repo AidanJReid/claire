@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import os
-import env
+# import env this is toggled to deploy app on Heroku
 import sys
 
 if __name__ == "__main__":

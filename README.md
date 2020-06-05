@@ -177,9 +177,10 @@ To test responsiveness, the following mobiles were tested Galaxy S5, Pixel 2, Pi
 |  3  | Stripe Confirmation Payment  | This now works after using a sixteen digit number '4242424242424242'. In the tutorial we were advised to use the 11 digit number which, in fact, threw a 402 error. CVV left blank will also permit payment.  |
 |  4  | Email password reset  | Not connected to host email  |
 |  5  | Booking treatments restricted  | Initially, my 30 day trial using Calendly (API integrated) included all the listed treatments on offer. However, this has expired prior to submitting project. One remains, and at this stage, it should be considered more of a 'nice to have' feature.  |
-|  6  | Blank line at top of carousel in mobile  | Adjusted margin-top accordingly  |
-|  7  | Individual product page drilldown  | Opted against using it. Difficult to implement the changes I sought and in interest of time, I left this feature out  |
-|  8  | Travis Build Passing  | Weirdly, when I commit to Heroku and perform Travis CI check, it fails. When I push to local storage, it passes. For this project, the final app will be hoested on Heroku and the last commit will be on local storage only (not Heroku)  |
+|  6  | Home Contact Form  | Not working correctly |
+|  7  | Blank line at top of carousel in mobile  | Adjusted margin-top accordingly  |
+|  8  | Individual product page drilldown  | Opted against using it. Difficult to implement the changes I sought and in interest of time, I left this feature out  |
+|  9  | Travis Build Passing  | Weirdly, Travis tells me that my project passes the test. Though, this isn't reflected on the button in Github ERADME as it says 'Build Failing. It's behaved inconsistently for a few days (usually passing). Not sure what problem is |
 
 ## Deployment
 

@@ -77,7 +77,7 @@ I used **Balsamiq for desktop** wireframes for two reasons:
 - Students have free access to the desktop version until the end of 2020.
 - I really enjoyed how simple and easy it is to use for mockups especially in conversations with my assigned mentor for brainstorming. The following mockup was created before a single line of code was written. It evolved from there!
 
-
+![Wireframes](/static/assets/img/lblue.png)
 
 ## Features
 

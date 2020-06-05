@@ -46,7 +46,7 @@ The front end uses HTML, CSS and Javascript. The back end uses Python and Django
 
 ## UX
 
-![Responsiveness Test](/static/assets/img/lb.PNG)
+![Responsiveness Test](/static/assets/img/lb.png)
 
 ### User Stories
 

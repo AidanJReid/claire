@@ -88,6 +88,7 @@ I used **Balsamiq for desktop** wireframes for two reasons:
 - **Link/Buttons** - Nav Links change depending on whether the visitor is a guest or successfully logged in, e.g. if not logged in (Register, Login, Treatments, Cart); logged in (Profile, Logout, Treatments, Cart).
 - **Register** - Allows visitors to register for a free account. Checks included to ensure username and email address don't already exist in the database before users are successfully registered. Passwords stored in the database are hashed for security reasons.
 - **Logout** - Logged-in users can logout by clicking on appropriate button in the nav/sidenav, thereby ending their session.
+- **Cart item adjustment** Users can easily modify items existing in their cart (add/remove) as well as add multiple items to their cart.
 - **Email Reset Password** - Registered users having difficulty recalling their password can reset it on the login page, whereby the email address associated with their profile will receive an email with corresponding link to confirm that they want to reset their password (and subsequently choose a new password to overwrite old on in the database).
 - **Profile Page** - Unique page detailing user name, email address of account and pre-populated shopping cart details.
 - **Search** - Search for treatment by keyword (this would be using the 'contain' syntax).
@@ -265,7 +266,7 @@ STRIPE_SUCCESS_URL | `<link to checkout/confirm page in your app>`
 
 ### Conclusion
 
-I learnt a valuable lesson in this milestone. When I initially started this project I was 6 months into the course and had build much of the back-end. I then decided to park the project and spent more time exploring front-end technologies on other mediums. I revisited this project in the final month of my diploma and it was a considerable struggle to 'plug' back into the code again.
+I learnt a valuable lesson in this milestone. When I initially started this project I was 6 months into the course and built much of the back-end. I then decided to park the project and spent more time exploring front-end technologies on other mediums. I revisited this project in the final month of my diploma and it was a considerable struggle to 'plug' back into the code again.
 
 Going back over the tutorials that had guided me effectively the first time, was to no avail. Those videos that I had built my code on had been replaced by a newer CI project.
 
@@ -273,5 +274,6 @@ However, I've enjoyed the course immensely and it has given me lots of valuable 
 
 ### Acknowledgements
 
-* Inspiration and structural format for this README from [Travel Tim's oustanding project](https://github.com/TravelTimN/ci-milestone04-dcd), and [AJ Greaves mousetastic project](https://raw.githubusercontent.com/AJGreaves/thehouseofmouse).
+* Inspiration and structural format for this README gleamed from [Travel Tim's oustanding project](https://github.com/TravelTimN/ci-milestone04-dcd), and [AJ Greaves mousetastic project](https://raw.githubusercontent.com/AJGreaves/thehouseofmouse).
 * Brian Macharia, my CI mentor, for his support and patience.
+* The Code Institute team, especially the slack channels which were a massive help. 99% of the questions I had were already answered there.

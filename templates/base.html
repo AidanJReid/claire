@@ -25,6 +25,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- Collapsible navbar on mobile devices -->
             <div class="collapse navbar-collapse" id="navbar1">
                 <ul class="navbar-nav mr-auto">
                     {% if user.is_authenticated %}
@@ -78,20 +79,20 @@
 						<br>Dublin, Ireland</p>
 				</div>
 
-				<!-- Footer Social Icons -->
+				<!-- Footer Social Icons | Dummy Values used as placeholders -->
 				<div class="col-lg-4 mb-5 mb-lg-0">
 					<h4 class="text-uppercase mb-4">Get Social With Me!</h4>
 					<!-- Facebook -->
                     <a href="#" target="_blank">
-                        <i class="fa fa-facebook-f mx-2 fa-3x"> </i>
+                        <i class="fa fa-facebook-f mx-2 fa-3x"></i>
                     </a>
                     <!-- Twitter -->
                     <a href="#" target="_blank">
-                        <i class="fa fa-twitter mx-2 fa-3x"> </i>
+                        <i class="fa fa-twitter mx-2 fa-3x"></i>
                     </a>
                     <!--Instagram-->
                     <a href="#" target="_blank">
-                        <i class="fa fa-instagram mx-2 fa-3x"> </i>
+                        <i class="fa fa-instagram mx-2 fa-3x"></i>
                     </a>
 				</div>
 
@@ -109,11 +110,13 @@
         </div>
 	</footer>
     <!-- End footer -->
-</body>
+
+    <!-- Script tags -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
     <!-- Strip JS loader for checkout -->
     {% block stripe_js %}{% endblock stripe_js %}
+</body>
 </html>

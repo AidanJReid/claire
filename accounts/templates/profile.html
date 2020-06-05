@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block content %}
+<!-- Registered User Profile -->
 <h1 class="top-head text-center">Profile</h1>
 <hr>
 <div class="row my-5">
     <div class="col-xs-12 col-md-6 offset-md-3">
+    <!-- Group of Profile Items -->
         <ul class="list-group">
             <li class="list-group-item list-group-item-info">
                 {% block page_title %}{{ user }}'s Profile{% endblock %}
@@ -17,9 +19,11 @@
             <span class="badge badge-primary badge-pill">{{ item.quantity }}</span>
             {% endfor %}</li>
         </ul>
+        <!-- Checkout section takes you to Checkout Page -->
         <div class="mx-auto text-center mt-4">
             <a href="{% url 'checkout' %}" class="btn btn-success btngen" role="button">Checkout</a>
         </div>
     </div>
 </div>
+<!-- End of User Profile Section -->
 {% endblock %}

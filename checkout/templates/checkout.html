@@ -3,6 +3,7 @@
 {% load bootstrap_tags %}
 
 {% block stripe_js %}
+<!-- Stripe Payment Integration -->
 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 <script type="text/javascript">
     //<![CDATA[
@@ -13,6 +14,7 @@
 {% endblock %}
 
 {% block content %}
+<!-- Shopping Cart Section -->
 <div class="container-fluid">
     <h1 class="top-head text-center">Shopping Cart</h1>
     <hr>
@@ -32,11 +34,16 @@
         {% endfor %}
     </div>
 </div>
+<!-- End Shopping Cart -->
+
+<!-- Grand Total Section -->
 <hr class="my-3">
 <div class="container-fluid text-center">
     <h1>Grand Total: €{{ total }}</h1>
 </div>
 <hr class="my-3">
+
+<!-- Checkout Section and order/payment forms -->
 <div class="container-fluid">
     <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
         <h4>Payment Details</h4>
@@ -47,16 +54,20 @@
         </div>
         <div class="row">
             <div class="form-group col-md-6">
+            <!-- Order form -->
                 {{ order_form | as_bootstrap }}
             </div>
             <div class="form-group col-md-6">
+            <!-- Payment Form -->
                 {{ payment_form | as_bootstrap }}
             </div>
         </div>
         {% csrf_token %}
+        <!-- Final Confirmation Button of Purchase -->
         <div class="form-group col-md-12 text-center">
             <input class=" btn btn-primary btn-lg btngen active" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
         </div>
     </form>
 </div>
+<!-- End Checkout Section -->
 {% endblock %}

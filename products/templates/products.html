@@ -11,12 +11,13 @@
 </div>
 {% endif %}
 {% block content %}
+<!-- Treatment intro and search -->
 <div class="container text-center pb-3">
 	<h1 class="top-head">Range of Treatments</h1>
     <p>Search for available treatments. Alternatively, scroll down for complete list.</p>
     <p><em>NB. More to be added!</em></p>
     <div class="text-center">
-    <!-- Form search -->
+    <!-- Form treatment search -->
         <form action="{% url 'search' %}" class="form-inline" method="get" style="justify-content:center">
             <input type="text" name="q" class="form-control mr-sm-2" placeholder="Treatment"></input>
             <button class="btn btn-warning my-2 my-sm-0" type="submit">Search</button>
@@ -24,6 +25,7 @@
     </div>
 </div>
 <hr>
+<!-- Treatment section | All treatments featured -->
 <div class="container-fluid mb-3">
     <div class="card-deck">
         {% for product in products %}

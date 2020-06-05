@@ -3,6 +3,7 @@
 {% load bootstrap_tags %}
 
 {% block content %}
+<!-- Register New User Section -->
 <h1 class="top-head text-center">Register</h1>
 <hr>
 <div class="row">
@@ -14,9 +15,11 @@
         </form>
         <br>
         <div class="text-center">
+        <!-- Tiny text taking user to login page -->
             <small><em>Already have an account? <a href="{% url 'login' %}">Sign in</a></em></small>.
         </div>
     </div>
 </div>
 <hr>
+<!-- End of register user section -->
 {% endblock %}

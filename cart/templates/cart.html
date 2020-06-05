@@ -3,6 +3,7 @@
 {% load bootstrap_tags %}
 
 {% block content %}
+<!-- Shopping Cart Section -->
 <h1 class="top-head text-center">Shopping Cart</h1>
 <hr>
 <div class="container-fluid">
@@ -10,6 +11,7 @@
         {% for item in cart_items %}
         <div class="col-xs-10 col-xs-offset-1 col-md-6 col-lg-3 mb-2">
             <div class="card h-100 shadow-lg p-1 bg-white rounded">
+            <!-- Treatment Detail -->
                 <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
                     <div class="card-body">
                         <h5 class="card-title">{{ item.product.name }}</h5>
@@ -17,6 +19,7 @@
                         <p>€{{ item.product.price }}</p>
                     </div>
                     <div class="card-footer">
+                    <!-- Adjustable quantity -->
                         <form method="post" action="{% url 'adjust_cart' item.id %}">
                             {% csrf_token %}
                             <div class="input-group">
@@ -33,6 +36,7 @@
         {% endfor %}
     </div>
     <hr>
+    <!-- Total Cost Section -->
     <div class="container my-4 py-3" id="cartSection">
         <div class="mx-auto text-center">
             <h2><strong>TOTAL:</strong> €{{ total }}</h2>
@@ -41,4 +45,5 @@
         </div>
     </div>
 </div>
+<!-- End Shopping Cart Section -->
 {% endblock %}

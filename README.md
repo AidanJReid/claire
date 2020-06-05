@@ -31,7 +31,7 @@
 
 ## About
 
-This is an ecommerce website (app) for a massage service that enables clients to book and pay for a range of treatments.
+This is an ecommerce website for a massage service that enables clients to book and pay for a range of treatments.
 This has been conceived with a real-world application in mind - my sister's fledgling startup side-business.
 
 ### Purpose
@@ -83,19 +83,20 @@ I used **Balsamiq for desktop** wireframes for two reasons:
 
 ### Existing features
 
-- Deployed a **Sticky navbar | Sidenav** making navigation easier for the user, especially on mobile. This displays various links based on user profile, .e.g. If not logged in (Register, Login, Treatments, Cart); logged in (Logout, Treatments, Cart). Sidenav pops out on small to medium devices (max-width 992 px) 
-and contain the aforementioned nav links.
+- Deployed a **Sticky navbar | Sidenav** making navigation easier for the user, especially on mobile. This displays various links based on user profile. Sidenav pops out on small to medium devices (max-width 992 px) and contain the aforementioned nav links.
 - **Login** - enables registered users to login. Username and password are cross-checked against account for verification against details stored in the database.
+- **Link/Buttons** - Nav Links change depending on whether the visitor is a guest or successfully logged in, e.g. if not logged in (Register, Login, Treatments, Cart); logged in (Profile, Logout, Treatments, Cart).
 - **Register** - Allows visitors to register for a free account. Checks included to ensure username and email address don't already exist in the database before users are successfully registered. Passwords stored in the database are hashed for security reasons.
 - **Logout** - Logged-in users can logout by clicking on appropriate button in the nav/sidenav, thereby ending their session.
-- **Reset Password** - Registered users having difficulty recalling their password can reset it on the login page, whereby the email address associated with their profile will receive an email with corresponding link to confirm that they want to reset their password (and subsequently choose a new password to overwrite old on in the database).
-- **Profile Page** - Unique page detailing user name, email address of account and shopping cart details.
-- **Search** - Search for treatment by keyword.
+- **Email Reset Password** - Registered users having difficulty recalling their password can reset it on the login page, whereby the email address associated with their profile will receive an email with corresponding link to confirm that they want to reset their password (and subsequently choose a new password to overwrite old on in the database).
+- **Profile Page** - Unique page detailing user name, email address of account and pre-populated shopping cart details.
+- **Search** - Search for treatment by keyword (this would be using the 'contain' syntax).
 
 ### Features Left to Implement
 
 - **Filter** - Particularly useful for certain symptoms or for specific aches. This would be added as the number of available treatments grow. Now, it's relatively manageable.
 - **Product Drill** - The ability to 'zoom' into treatment, see the various health benefits and perhaps a youtube tutorial showcasing treament.
+- **Customer Reviews** - Would be great to (only) allow paying customers to leave a review against the treatment.
 
 
 ## Technologies Used
@@ -109,17 +110,15 @@ and contain the aforementioned nav links.
 
 ### Technologies
 - **HTML**
-    - [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Used to structure pages, forms and associated content with user profiles as well as database. 
-It also featured in the nav and footer sections of the page.
+    - [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Used to structure pages, forms and associated content with user profiles as well as database. It also featured in the nav and footer sections of the page.
 - **CSS**
     - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) - Used as the base for cascading styles.
 - **Bootstrap**
-    - [Bootswatch - Cerulean theme](https://bootswatch.com/4/cerulean/bootstrap.min.css) - Apply responsive grid layout framework with associated components and plugins in
-    conjunction with my own applied custom stylesheet.
+    - [Bootswatch - Cerulean theme](https://bootswatch.com/cerulean/) - Apply responsive grid layout framework with associated components and plugins in conjunction with my own applied custom stylesheet.
 - **JQuery**
     - [jQuery 3.4.1](https://code.jquery.com/jquery/) - Used to improve and simplify Javascript code.
 - **Django**
-    - [Django](https://www.heroku.com) used as primary Python web framework.
+    - [Django](https://www.djangoproject.com/) used as primary Python web framework.
 - **Python**    
     - [Python 3.6.7](https://www.python.org/) - Used as the back-end programming language.
 - **Amazon S3**
@@ -178,6 +177,7 @@ To test responsiveness, the following mobiles were tested Galaxy S5, Pixel 2, Pi
 |  4  | Email password reset  | Not connected to host email  |
 |  5  | Booking treatments restricted  | Initially, my 30 day trial using Calendly (API integrated) included all the listed treatments on offer. However, this has expired prior to submitting project. One remains, and at this stage, it should be considered more of a 'nice to have' feature.  |
 |  6  | Blank line at top of carousel in mobile  | Adjusted margin-top accordingly  |
+|  7  | Individual product page drilldown  | Opted against using it. Difficult to implement the changes I sought and in interest of time, I left this feature out  |
 
 
 ## Deployment
@@ -243,7 +243,7 @@ STRIPE_SUCCESS_URL | `<link to checkout/confirm page in your app>`
 
 ### Content
 
-*  Created under the guidance of Claire Reid - eventual site owner and masseuse.
+*  Created under the watchful eye of Claire Reid - eventual site owner and masseuse.
 
 
 ### Media
@@ -273,5 +273,5 @@ However, I've enjoyed the course immensely and it has given me lots of valuable 
 
 ### Acknowledgements
 
-* Inspiration and structural format for this README from [Travel Tim's oustanding project](https://github.com/TravelTimN/ci-milestone04-dcd), and [AJ Greaves mousetastic's project](https://raw.githubusercontent.com/AJGreaves/thehouseofmouse).
+* Inspiration and structural format for this README from [Travel Tim's oustanding project](https://github.com/TravelTimN/ci-milestone04-dcd), and [AJ Greaves mousetastic project](https://raw.githubusercontent.com/AJGreaves/thehouseofmouse).
 * Brian Macharia, my CI mentor, for his support and patience.

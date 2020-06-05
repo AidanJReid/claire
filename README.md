@@ -77,18 +77,7 @@ I used **Balsamiq for desktop** wireframes for two reasons:
 - Students have free access to the desktop version until the end of 2020.
 - I really enjoyed how simple and easy it is to use for mockups especially in conversations with my assigned mentor for brainstorming. The following mockup was created before a single line of code was written. It evolved from there!
 
-- [Home - no user logged in (xs, sm and md)]()
-- [Home - no user logged in (lg and xl)]()
-- [Home - user logged in (xs, sm and md)]()
-- [Home - user logged in (lg and xl)]()
-- [Profile - user logged in (xs, sm and md)]()
-- [Profile - user logged in (lg and xl)]()
-- [Treatments - user logged in (xs, sm and md)]()
-- [Treatments - user logged in (lg, xl)]()
-- [Cart - user logged in - something in the cart (xs, sm and md)]()
-- [Cart - user logged in - something in the cart (lg, xl)]()
-- [Checkout - user logged in (xs, sm and md)]()
-- [Checkout - user logged in (lg and xl)]()
+
 
 ## Features
 
@@ -254,7 +243,7 @@ STRIPE_SUCCESS_URL | `<link to checkout/confirm page in your app>`
 
 ### Content
 
-*  Created with the help of Claire Reid - eventual site owner and masseuse.
+*  Created under the guidance of Claire Reid - eventual site owner and masseuse.
 
 
 ### Media
@@ -263,9 +252,7 @@ STRIPE_SUCCESS_URL | `<link to checkout/confirm page in your app>`
 * Favicon created at [Favicon.io](https://favicon.io/)
 * Image Gallery:
     - Carousel homepage images 
-    [1](https://pixabay.com/images/id-1929064/)
-    [2](https://pixabay.com/images/id-2768833/)
-    [3](https://pixabay.com/images/id-3084952/)
+    ([1](https://pixabay.com/images/id-1929064/), [2](https://pixabay.com/images/id-2768833/), [3](https://pixabay.com/images/id-3084952/))
     - [Jumbotron (booking) image](https://unsplash.com/photos/n7a2OJDSZns)
     - Treatments
         - [Back Massage](https://unsplash.com/photos/CEM52sAHR80)
@@ -278,13 +265,13 @@ STRIPE_SUCCESS_URL | `<link to checkout/confirm page in your app>`
 
 ### Conclusion
 
-I learnt a valuable lesson in this milestone. When I started this project I was 6 months into the course and had build much of the back-end which was working successfully. I decided to park the project and spent more time exploring front-end technologies on other mediums. I revisited this project in the final month of my diploma and it was a considerable struggle to 'plug' back into the code again.
+I learnt a valuable lesson in this milestone. When I initially started this project I was 6 months into the course and had build much of the back-end. I then decided to park the project and spent more time exploring front-end technologies on other mediums. I revisited this project in the final month of my diploma and it was a considerable struggle to 'plug' back into the code again.
 
 Going back over the tutorials that had guided me effectively the first time, was to no avail. Those videos that I had built my code on had been replaced by a newer CI project.
 
-I've enjoyed the course immensely and it has given me lots of valuable insights which I will carry with me into my coding career.
+However, I've enjoyed the course immensely and it has given me lots of valuable insights which I will carry with me into my coding career.
 
 ### Acknowledgements
 
-* Inspiration and structural format for this README from [Travel Tim's oustanding project](https://github.com/TravelTimN/ci-milestone04-dcd), and [AJGreaves mousetastic's project](https://raw.githubusercontent.com/AJGreaves/thehouseofmouse).
+* Inspiration and structural format for this README from [Travel Tim's oustanding project](https://github.com/TravelTimN/ci-milestone04-dcd), and [AJ Greaves mousetastic's project](https://raw.githubusercontent.com/AJGreaves/thehouseofmouse).
 * Brian Macharia, my CI mentor, for his support and patience.

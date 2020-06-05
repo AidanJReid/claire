@@ -1,4 +1,6 @@
-/* Styling of headers and body */
+/* GENERAL styling of headers and body */
+
+/* Font import */
 @import url('https://fonts.googleapis.com/css2?family=Bellota:wght@400;700&family=Libre+Franklin&display=swap');
 
 body {
@@ -11,17 +13,27 @@ h1, h2, h3, .navbar-brand {
 }
 
 hr {
-    width: 50%;
+    width: 75%;
 }
 
-/* HOME PAGE */
+.top-head {
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.btngen {
+    letter-spacing: 0.1rem;
+    filter:drop-shadow(4px 4px 6px gray);
+}
+
+/* HOME PAGE SPECIFICS */
 
 /* Carousel */
 
 .carousel-item img {
     height: 66vh !important;
-    -webkit-filter: grayscale(90%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(90%);
+    -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(60%);
 }
 
 .carousel-title {
@@ -46,39 +58,19 @@ hr {
     text-shadow: 4px 4px 8px #2e2e95; /* Shading for the word 'BLUE' */
 }
 
-/* Various Home features */
-
-#body-bg {
-    background-color: white;
-}
-
-.top-head {
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
+/* 3 column section on home */
 
 .icon-bar {
     background-color: #fff;
 }
 
-.accountform {
-    padding-top: 20px;
+.icon-intro {
+    padding: 10px 0px;
+    letter-spacing: 0.1rem;
 }
 
-.badge {
-    padding-left: 9px;
-    padding-right: 9px;
-    -webkit-border-radius: 9px;
-    -moz-border-radius: 9px;
-    border-radius: 9px;
-}
+/* Jumbotron - inspired by the code from https://css-tricks.com/apply-a-filter-to-a-background-image/ */
 
-.label-warning[href],
-.badge-warning[href] {
-    background-color: #c67605;
-}
-
-/* Jumbotron - inspired by the code written on https://css-tricks.com/apply-a-filter-to-a-background-image/*/
 .jumbotron {
     position: relative;
 }
@@ -101,7 +93,8 @@ hr {
     position: relative;
 }
 
-/* Quote sourced from https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp*/
+/* Quote section sourced from https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp*/
+
 #quote {
     background: radial-gradient(#2e2e95,#8465e5c7);
     color: white;
@@ -109,13 +102,7 @@ hr {
     height: 250px;
 }
 
-@media only screen and (max-width: 600px) {
-  #quote {
-    height: 300px;
-  }
-}
-
-/* Contact form section - another from UI gradients - https://uigradients.com/#Dull*/
+/* Contact form section - background from UI gradients - https://uigradients.com/#Dull*/
 
 #form-section {
     background: #C9D6FF;  /* fallback for old browsers */
@@ -128,17 +115,11 @@ hr {
     border-radius: 10px;
 }
 
-.btngen {
-    letter-spacing: 0.1rem;
-    filter:drop-shadow(4px 4px 6px gray);
-}
-
 .blockquote-footer {
     color: #fff;
     text-emphasis: bolder;
     text-transform: uppercase;
 }
-
 
 /* TREATMENTS PAGE */
 .card {
@@ -147,7 +128,7 @@ hr {
 }
 
 .product {
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     height: 150px;
@@ -163,12 +144,6 @@ caption p {
     margin-left: 0px;
 }
 
-.row.row-flex {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
 .card-body {
     border: 1px solid white;
 }
@@ -177,62 +152,23 @@ caption p {
     min-height: 40px;
 }
 
-.text-truncate {
-  overflow: hidden;
-  max-width: 75ch;
-}
-
-/* INDIVIDUAL TREATMENT PAGE https://www.w3schools.com/howto/howto_css_user_rating.asp */
-
-.heading {
-  font-size: 25px;
-  margin-right: 25px;
-}
-
-/* .fa {
-  font-size: 25px;
-} */
-
-.checked {
-  color: orange;
-}
-
-/* Three column layout */
-.side {
-  float: left;
-  width: 15%;
-  margin-top: 10px;
-}
-
-.middle {
-  float: left;
-  width: 70%;
-  margin-top: 10px;
-}
-
-/* Place text to the right */
-.right {
-  text-align: right;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /* PROFILE SECTION */
-.chip {
-  display: inline-block;
-  padding: 0 25px;
-  height: 60px;
-  font-size: 16px;
-  line-height: 60px;
-}
 
 #pemail {
     float:right;
+}
+
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+    background-color: #c67605;
 }
 
 /* CART SECTION */
@@ -242,7 +178,7 @@ caption p {
     justify-content: center;
     align-content: center;
     background-color: lavender;
-    width: 60vw;
+    width: 40vw;
     border-radius: 12px;
     box-shadow: 1px 1px 3px 1px gray;
 }
@@ -264,5 +200,11 @@ caption p {
   }
   .carousel-title {
     font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #quote {
+    height: 300px;
   }
 }

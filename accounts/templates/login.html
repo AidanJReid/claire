@@ -4,18 +4,19 @@
 
 {% block content %}
 <h1 class="top-head text-center">User Login</h1>
+<hr>
 <div class="row">
-    <div class="col-md-4">
-    </div>
-    <div class="col-xs-12 col-md-4">
+    <div class="col-xs-12 col-md-4 offset-md-4">
         <form method="POST">
         {% csrf_token %}
         {{ login_form | as_bootstrap }}
         <button type="submit" class="btn btn-primary btngen">Login</button>
-    </form>
-    <p><a href="{% url 'password_reset' %}">Reset Password</a></p>
-    </div>
-    <div class="col-md-4">
+        </form>
+        <br>
+        <div>
+            <small><a href="{% url 'password_reset' %}">Reset Password</a></small>
+        </div>
     </div>
 </div>
+<hr>
 {% endblock %}

@@ -32,27 +32,64 @@
 
 <!-- Main body container -->
 <div class="container-fluid py-2" style="background-color:#fff">
-    
+
     <!-- Introduction section -->
     <div class="container py-2">
         <div class="row text-center">
             <div class="col">
-                <h1 class="top-head"><span style="font-size: 2rem; font-weight: bolder">A Natural Approach To Healing</span></h1>
+                <h1 class="py-3"><span style="font-size: 2rem; font-weight: bolder">A Natural Approach To Healing</span></h1>
                 <div class="col-xs-12 col-md-8 offset-md-2">
                     <p>My name is Claire and I'm a newly qualified holistic massage therapist based in Dublin. 
                     <p>I specialize in pregnancy, oncology and lymph drainage massage and have worked with a number of happy clients.</p>
                     <p>Using natural organic oils I will help you to heal and rejuvenate both body and mind.</p>
-                    <div class="text-center main-btn"><a href="{% url 'products' %}" class="btn btn-outline-primary btn-lg" role="button" aria-pressed="true">View Treatments</a>
-                </div>
+                    <div class="text-center main-btn mt-4">
+                        <a href="{% url 'products' %}" class="btn btn-outline-primary btn-lg" role="button" aria-pressed="true">View Treatments</a>
+                    </div>
                 </div>    
             </div>
         </div>
     </div>
     <hr>
+    <!-- end of introduction -->
+
+    <!-- Look at me container -->
+    <div class="container my-5">
+        <div class="row mx-auto">
+            <div class="col-sm-12 col-md-4 text-center">
+                <div class="icon-block">
+                    <div class="text-center py-3">
+                        <i class="fa fa-certificate fa-3x"></i>
+                    </div>
+                    <h5 class="text-uppercase icon-intro">Alternative<br> Therapy</h5>
+                    <p>I provide a wide range of treatments</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 text-center">
+                <div class="icon-block">
+                    <div class="text-center py-3">
+                        <i class="fa fa-home fa-3x"></i>
+                    </div>
+                    <h5 class="text-uppercase icon-intro">Comfortable<br> Setting</h5>
+                    <p>My home studio caters for your needs</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 text-center">
+                <div class="icon-block">
+                    <div class="text-center py-3">
+                        <i class="fa fa-heartbeat fa-3x"></i>
+                    </div>
+                    <h5 class="text-uppercase icon-intro">Heart <br>Centered</h5>
+                    <p>Your health always comes first</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- End of look at me container -->
 
     <!-- Jumbotron section -->
     <div class="container my-3">
-        <div class="jumbotron">
+        <div class="jumbotron shadow rounded">
             <div class="d-block w-100" id="jumbo-image" alt="jumbo">
                 <h2 class="display-4">Book In!</h2>
                 <p class="lead">Prefer to pay in person?</p>
@@ -67,6 +104,8 @@
         </div>
     </div>
     <hr>
+    <!-- end of jumbotron -->
+    
 </div>
 <!-- End Main body container -->
 

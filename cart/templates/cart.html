@@ -8,7 +8,7 @@
 <div class="container-fluid">
     <div class="card-deck">
         {% for item in cart_items %}
-        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-3 mb-2">
+        <div class="col-xs-10 col-xs-offset-1 col-md-6 col-lg-3 mb-2">
             <div class="card h-100 shadow-lg p-1 bg-white rounded">
                 <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
                     <div class="card-body">
@@ -33,9 +33,10 @@
         {% endfor %}
     </div>
     <hr>
-    <div class="container my-4 py-2" id="cartSection">
-        <div class="mx-4 text-center">
-            <h2>TOTAL: €{{ total }}</strong></h2>
+    <div class="container my-4 py-3" id="cartSection">
+        <div class="mx-auto text-center">
+            <h2><strong>TOTAL:</strong> €{{ total }}</h2>
+            <hr style="width:40px">
             <a href="{% url 'checkout' %}" class="btn btn-success btngen" role="button">Checkout</a>
         </div>
     </div>
